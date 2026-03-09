@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #1a1a1a;
+  --bg-tertiary: #2a2a2a;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: #e5e5e5;
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: #2a2a2a #0a0a0a;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: #0a0a0a;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: #2a2a2a;
+    border-radius: 3px;
+  }
+}
+
+.code-block {
+  font-family: 'Fira Code', 'JetBrains Mono', 'Cascadia Code', monospace;
+  tab-size: 2;
+}
+
+.code-block .keyword { color: #c678dd; }
+.code-block .string { color: #98c379; }
+.code-block .comment { color: #5c6370; font-style: italic; }
+.code-block .function { color: #61afef; }
+.code-block .number { color: #d19a66; }
+.code-block .tag { color: #e06c75; }
+.code-block .attr { color: #d19a66; }
+.code-block .type { color: #e5c07b; }
