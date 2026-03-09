@@ -1,7 +1,6 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { UserButton } from "@clerk/nextjs";
 import { ChevronRight } from "lucide-react";
 
 const breadcrumbMap: Record<string, string> = {
@@ -30,7 +29,7 @@ export function Header() {
         ))}
       </div>
 
-      <UserButton afterSignOutUrl="/sign-in" />
+      <div className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white text-sm font-bold">K</div>
     </header>
   );
 }
